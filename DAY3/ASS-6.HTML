@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <style>
+   td {    color: red;   }
+  </style>
+   <title>Details</title>
+ </head>
+ <body>
+
+  <fieldset id="abcd">
+   <legend>Details</legend>
+   Name: <input type="text" id="uname" required />
+ <br/> <br/>
+   Aadhar number: <input type="text" id="Aadhar" required />
+<br/> <br/>
+   Phone: <input type="tel" id="mobile" />
+ <br/><br/>
+   <button onclick="readData()">Submit</button>
+  </fieldset>
+ <br/><br/>
+   <h1>Result Table</h1>
+  <table border='1'>
+   <tr>
+    <th>Name</th>
+    <th>Aadhar number</th>
+    <th>Phone Number</th>
+   </tr>
+   <tr>
+    <td id="abc">Not yet read</td>
+    <td id="123">Not yet read</td>
+    <td id="xyz">Not yet read</td>
+   </tr>
+  </table>
+  <script>
+   function readData()
+ {    
+var uname=document.getElementById('uname').value;
+        var Aadhar=document.getElementById('Aadhar').value;
+    var phone=document.getElementById('mobile').value; 
+   /*console.log(document.getElementById('abcd'); 
+   console.log(uname,phone);*/ 
+       document.getElementById('abc').innerHTML=uname; 
+   document.getElementById('123').innerHTML=Aadhar;
+    document.getElementById('xyz').innerHTML=phone;
+    } 
+ </script>
+ </body>
+</html>

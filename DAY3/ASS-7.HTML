@@ -1,0 +1,42 @@
+<!--Create an input that reads from radio, checkbox which displays the selected data in separate paragraphs-->
+<!doctype html>
+<html>
+<head>
+<title>forms ex-4</title>
+<style>p{ color:red;font-size:40px;}</style>
+</head>
+<body>
+
+<h3>your favourite sport:</h3>
+<input type="checkbox" id="cricket" value="cricket"/>Cricket
+<input type="checkbox" id="football" value="football"/>Football
+<br/><br/>
+<button onclick="readdata()">Submit</button>
+<p id="result"></p>
+<script>
+	function readdata() {	   
+		 	var cricket=document.getElementById('cricket');
+			var football=document.getElementById('football');
+			var res;
+			console.log(cricket.checked,football.checked);
+			if(cricket.checked == true && football.checked==true){
+				res='Cricket,Football';			
+			}
+			else if(cricket.checked == false && football.checked==true){
+			 	res='football only';
+			}
+			else if(cricket.checked == true && football.checked==false){
+			 	res='cricket only';
+			}
+
+			else {
+			 	res='NONE';	
+			}
+			document.getElementById('result').innerHTML=res;
+			}
+
+
+</script>
+
+
+</html>

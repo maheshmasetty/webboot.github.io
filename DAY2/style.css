@@ -1,0 +1,11 @@
+h1,h2 {
+				color: yellow;
+				text-align: center;
+				background-color: red;
+			}
+			p {
+				color: blue;
+				font-family: Arial;
+				font-size: 32px;
+				text-align: justify;
+			}

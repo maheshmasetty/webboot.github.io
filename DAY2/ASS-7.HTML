@@ -1,0 +1,31 @@
+<!--Create a button, when you click on the button some portion of the paragraph should be updated-->
+<!doctype>
+
+<html>
+
+	<head>
+		<title> span demo</title>
+
+		<style>
+			.letter{
+				background-color:green;
+				}	
+		</style>
+	</head>
+	<body>
+		<h2>welcome to bootcamp.</h2>
+		<p>
+			<SPAN id="t3" class ="letter">It</span> is going good.students are participating very well.
+			<span id="t1" class ="letter">bootcamp</span> is going 
+			<span id="t2" class ="letter">good<SPAN>
+		</p>
+		<button type="button" onclick="changetext()">change text</button>
+		<script>
+			
+			function changetext() {     
+					         document.getElementById('t1').innerHTML="madblocks bootcamp";
+					          document.getElementById('t3').innerHTML=" Bootcamp";	
+					}
+		</script>	
+	</body>
+</html>
